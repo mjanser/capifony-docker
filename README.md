@@ -17,14 +17,14 @@ capifony is a deployment recipes collection that works with both [symfony](http:
         -t \
         -v $(pwd):/root/workdir \
         -v $(readlink -f $SSH_AUTH_SOCK):/root/ssh-agent \
-        capifony
+        mjanser/capifony
 
 This runs capifony in the current directory and forwards the SSH authentication socket. All followed parameters are passed to capifony.
 
 ## Install script
 
 For simplicity you can install a script inside you PATH, for example in `/usr/local/bin/cap`, which executes the above command.
-You can use the script at https://github.com/mjanser/capifony-docker/cap.sh for this.
+You can use the script at [https://github.com/mjanser/capifony-docker/cap.sh](https://github.com/mjanser/capifony-docker/cap.sh) for this.
 
 # User Feedback
 
